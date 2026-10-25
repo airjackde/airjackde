@@ -31,7 +31,7 @@ if prompt := st.chat_input("Ask me anything..."):
     with st.chat_message("assistant"):
         try:
             resp = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="openai/gpt-oss-20b",
                 messages=st.session_state.messages
             )
             ans = resp.choices[0].message.content
