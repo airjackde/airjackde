@@ -3,8 +3,7 @@ from groq import Groq
 
 st.set_page_config(page_title="AIRJACKDE AI", page_icon="🤖", layout="centered")
 
-GROQ_API_KEY = "gsk_gDarz9iFpdI3EXIgBIQpWGdyb3FYaoDFJKrJczJSMY9IsNMPSn1s_"
-
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 client = Groq(api_key=GROQ_API_KEY)
 
 st.title("🤖 AIRJACKDE AI")
